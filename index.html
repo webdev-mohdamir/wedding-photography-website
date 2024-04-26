@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <div class="hero-section">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">WedGraphy</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 navbar-items">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-slider">
+        <div class="bg-slider" id="bg-slider">
+          <div class="slide" data-bgimage="bg-1.jpg">
+            <div class="background-image"></div>
+            <div class="slider-content">
+              <h1 class="slide-title">Capturing Timeless Moments</h1>
+              <p>
+                Experience the magic of your wedding day captured in exquisite
+                detail. Our team of talented photographers specializes in
+                preserving the timeless elegance and romance of your special
+                day. From intimate ceremonies to grand celebrations, we're
+                dedicated to creating stunning imagery that tells your unique
+                love story. Trust us to capture every cherished moment, ensuring
+                that your memories last a lifetime.
+              </p>
+            </div>
+          </div>
+          <div class="slide" data-bgimage="bg-2.jpg">
+            <div class="background-image"></div>
+            <div class="slider-content">
+              <h1 class="slide-title">Cherish Every Moment</h1>
+              <p>
+                Your wedding day is a celebration of love, joy, and
+                togetherness. Let us help you preserve those precious memories
+                with our expert photography services. With an eye for detail and
+                a passion for storytelling, we'll capture the essence of your
+                special day in every frame. From candid moments to breathtaking
+                portraits, our goal is to create a stunning collection of images
+                that you'll treasure for years to come.
+              </p>
+            </div>
+          </div>
+          <div class="slide" data-bgimage="bg-3.jpg">
+            <div class="background-image"></div>
+            <div class="slider-content">
+              <h1 class="slide-title">Your Love, Our Focus</h1>
+              <p>
+                Your wedding day deserves nothing but the best, and that's
+                exactly what we deliver. With a blend of creativity,
+                professionalism, and dedication, we'll capture every moment of
+                your celebration with precision and artistry. From the first
+                kiss to the final dance, our team will be there to document
+                every smile, every tear, and every heartfelt embrace. Trust us
+                to transform your wedding day into a timeless masterpiece of
+                photography.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-buttons">
+          <button id="prev" title="Previous">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button id="next" title="Next">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <!-- Portfolio Section -->
+      <section
+        id="portfolio"
+        class="row gap-4 portfolio justify-content-center mx-3 mx-sm-auto pt-5"
+      >
+        <div class="portfolio-content text-center">
+          <h2 class="sub-heading">
+            Our <span class="text-highlight">Portfolio</span>
+          </h2>
+          <p class="section-description">Check out my latest captures.</p>
+        </div>
+
+        <div class="col-6 portfolio-column">
+          <div class="row flex-column gap-4">
+            <div class="col portfolio-item">
+              <img src="assets/images/portfolio/portfolio-1.jpg" alt="" />
+            </div>
+            <div class="col portfolio-item">
+              <img src="assets/images/portfolio/portfolio-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 portfolio-column">
+          <div class="row flex-column gap-4">
+            <div class="col portfolio-item">
+              <img src="assets/images/portfolio/portfolio-3.jpg" alt="" />
+            </div>
+            <div class="col portfolio-item">
+              <img src="assets/images/portfolio/portfolio-4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 portfolio-column">
+          <div class="row flex-column gap-4">
+            <div class="col portfolio-item">
+              <img src="assets/images/portfolio/portfolio-5.jpg" alt="" />
+            </div>
+            <div class="col portfolio-item">
+              <img src="assets/images/portfolio/portfolio-6.jpg" alt="" />
+            </div>
+            <div class="col portfolio-item">
+              <img src="assets/images/portfolio/portfolio-3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- Testimonials Section -->
+      <section
+        id="testimonials"
+        class="row testimonials justify-content-between align-items-center"
+      >
+        <div class="col-12 col-sm-6 testimonials-content p-5">
+          <h2 class="sub-heading">
+            Clients <span class="text-highlight">Testimonials</span>
+          </h2>
+          <p class="section-description">
+            Check out what our clients have to say about us.
+          </p>
+
+          <div class="review mt-4">
+            <p class="review-comment">
+              <i class="bi bi-quote"></i>
+              WedGraphy was a pleasure to work with. They were very professional
+              and on time. I highly recommend them.
+              <i class="bi bi-quote flip-left d-inline-block"></i>
+            </p>
+
+            <div class="review-author d-flex align-items-center gap-3">
+              <img src="assets/images/testimonials/amir_avatar.jpg" alt="" />
+              <div class="author-info">
+                <h5>John Doe</h5>
+                <span class="text-secondary">Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 testimonialSlider">
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img
+                  src="assets/images/portfolio/portfolio-3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="assets/images/portfolio/portfolio-2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/portfolio/portfolio-6.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+
+            <div class="carousel-btns">
+              <button
+                class="carousel-btn carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon bi" aria-hidden="true">
+                  <i class="bi-arrow-left"></i>
+                </span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-btn carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon bi" aria-hidden="true">
+                  <i class="bi-arrow-left"></i>
+                </span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+    </main>
+
+    <!-- Hire Us -->
+    <section class="hire-us px-2 px-sm-0">
+      <div class="container">
+        <div class="hire-us-content row text-center justify-content-center">
+          <div class="col-12">
+            <h2 class="sub-heading mb-3 hire-us-heading">
+              Wanna <span class="text-bg-highlight">Hire Us</span>
+            </h2>
+            <p class="section-description text-ivory">
+              We are always open to discuss your project and improve your online
+              presence.
+            </p>
+          </div>
+          <div class="col-12 mt-3">
+            <a href="contact.html" class="btn btn-lg cta-button-ivory"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hire Us End -->
+
+    <!-- Two Column Section -->
+    <section class="two-column-section mx-3 mx-sm-auto">
+      <div class="container">
+        <div class="row gap-5 justify-content-between">
+          <div class="col-12 col-lg-5 p-0 d-none d-sm-block">
+            <div class="wrapper">
+              <img src="assets/images/frame-1.jpg" />
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 p-0">
+            <h2 class="sub-heading">
+              We Provide
+              <span class="text-bg-highlight text-ivory p-2 px-3"
+                >Everything</span
+              >
+            </h2>
+
+            <div class="row mt-3">
+              <ul class="col-5">
+                <li class="fst-italic fs-5">Groom photography</li>
+                <li class="fst-italic fs-5">Wedding photography</li>
+                <li class="fst-italic fs-5">Event photography</li>
+                <li class="fst-italic fs-5">Product photography</li>
+                <li class="fst-italic fs-5">Corporate photography</li>
+              </ul>
+
+              <ul class="col-5">
+                <li class="fst-italic fs-5">Blog photography</li>
+                <li class="fst-italic fs-5">Portrait photography</li>
+                <li class="fst-italic fs-5">Travel photography</li>
+                <li class="fst-italic fs-5">Product photography</li>
+              </ul>
+            </div>
+
+            <button class="btn btn-lg btn-primary mt-3">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Two Column Section -->
+
+    <!-- Full Screen Slider -->
+    <section class="fullscreen-slider mx-3 mx-sm-auto">
+      <div class="slider d-flex">
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-1.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-2.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-3.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-5.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-6.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-4.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-1.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-2.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-3.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-5.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-6.jpg" alt="" />
+        </div>
+        <div class="slide col-3">
+          <img src="assets/images/portfolio/portfolio-4.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- End Full Screen Slider -->
+
+    <!-- Contact Us -->
+    <section id="contact-us" class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <h2 class="sub-heading mb-3">Contact Us</h2>
+          <form id="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="occation" class="form-label">Occation</label>
+                <select name="occation" id="occation" class="form-control">
+                  <option value="none" selected disabled>
+                    Select Occation
+                  </option>
+                  <option value="wedding">Wedding</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="party">Party</option>
+                  <option value="engagement">Engagement</option>
+                  <option value="corporate">Corporate</option>
+                  <option value="family">Family</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    <button
+                      type="submit"
+                      id="contact-us-btn"
+                      class="btn btn-dark w-100 fw-bold"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Us -->
+
+    <!-- Start Footer -->
+    <footer class="footer p-5">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="footer-logo">
+            <h2 class="sub-heading mb-3">
+              <a href="#" class="footer-heading">WedGraphy</a>
+            </h2>
+          </div>
+
+          <p class="footer-description">
+            WedGraphy is a leading web design agency with over 10 years of
+            experience. We are passionate about what we do, and we love what we
+            do.
+          </p>
+        </div>
+
+        <div class="col-1"></div>
+
+        <div class="col-12 col-md-3">
+          <h3 class="footer-heading tertiary-heading mb-3">
+            Useful <span class="text-highlight">Links</span>
+          </h3>
+          <ul class="footer-links d-flex gap-5">
+            <ul class="links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <ul class="links">
+              <li><a href="#">Hire Us</a></li>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="social-media-widget">
+            <h3 class="footer-heading tertiary-heading mb-3">Social Media</h3>
+            <ul class="d-flex gap-5">
+              <li>
+                <a href="#" class="social-icon text-ivory" title="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-icon text-ivory" title="Whatsapp"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-icon text-ivory" title="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="copyright-text text-secondary mt-3">
+            &#169; 2023-<span id="footer-year"></span> Webgraphy. All Rights
+            Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/javascripts/slider.js"></script>
+    <script src="assets/javascripts/script.js"></script>
+  </body>
+</html>

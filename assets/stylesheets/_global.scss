@@ -1,0 +1,168 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import './_font-styles';
+@import './colors';
+
+:root{
+  --main-bg-color: #{$ivory-white};
+
+  --main-text-color: #{$text};
+  --text-primary: #{$fresh-lime};
+  --text-secondary: #{$soft-lavender};
+  --text-tertiary: #{$moss-green};
+
+  --text-size-h1: #{$h1-font-size};
+  --text-size-h2: #{$h2-font-size};
+  --text-size-h3: #{$h3-font-size};
+  --text-size-h4: #{$h4-font-size};
+  --text-size-h5: #{$h5-font-size};
+  --text-size-base: #{$base-font-size};
+}
+
+h1, h2, h3, h4, h5, h6, button{
+  @include montserrat-family(600);
+  margin-bottom: 5px;
+}
+
+h1{
+  font-size: var(--text-size-h1);
+}
+
+h2{
+  font-size: var(--text-size-h2);
+}
+
+h5{
+  font-size: var(--text-size-h5);
+}
+
+a, p, span, input, textarea{
+  @include roboto-family(400);
+}
+
+p{
+  color: var(--main-text-color);
+  font-size: var(--text-size-base);
+}
+
+body{
+  overflow-x: hidden;
+  background-color: var(--main-bg-color);
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  margin: 100px 0px;
+}
+
+ul, ol, li{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.form-control{
+  &:focus,
+  &:active{
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+// Custom classes for text size and colors
+.sub-heading{
+  font-size: var(--text-size-h2);
+  color: var(--main-text-color);
+}
+
+.tertiary-heading{
+  font-size: var(--text-size-h3);
+  color: inherit;
+}
+
+.text-highlight{
+  color: var(--text-secondary);
+  font-weight: inherit;
+}
+
+.text-bg-highlight{
+  display: inline-block;
+  background-color: var(--text-secondary);
+  font-weight: inherit;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.text-green{
+  color: var(--text-primary);
+  font-weight: inherit;
+}
+
+.text-ivory{
+  color: var(--main-bg-color);
+}
+
+// button Styles
+.cta-button-ivory{
+  @include montserrat-family(600);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+
+  &:hover{
+    background-color: transparent;
+    border: 1px solid var(--main-bg-color);
+  }
+}
+
+// addon classes
+.flip-left{
+  transform: scaleX(-1);
+}
+
+.divider{
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(90deg, rgba(206, 211, 246, 0) 0, #ced3f6 38%, #ced3f6 64%, rgba(206, 211, 246, 0) 99%);
+  margin-top: 30px;
+  opacity: 0.3;
+  transform: translateX(-10%);
+}
+
+// global mixins
+@mixin backgroudImage($url){
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  :root{
+    --text-size-h1: #{$h1-font-size * 0.8};
+    --text-size-h2: #{$h2-font-size * 0.8};
+    --text-size-h3: #{$h3-font-size * 0.8};
+    --text-size-h4: #{$h4-font-size * 0.8};
+    --text-size-h5: #{$h5-font-size * 0.8};
+    --text-size-base: #{$base-font-size * 0.8};
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root{
+    --text-size-h1: #{$h1-font-size * 0.6};
+    --text-size-h2: #{$h2-font-size * 0.6};
+    --text-size-h3: #{$h3-font-size * 0.6};
+    --text-size-h4: #{$h4-font-size * 0.6};
+    --text-size-h5: #{$h5-font-size * 0.6};
+  }
+
+  section{
+    margin: 30px 0px;
+  }
+}

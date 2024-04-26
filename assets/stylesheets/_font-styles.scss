@@ -1,0 +1,19 @@
+@mixin roboto-family($font-weight:400, $font-style:normal) {
+  font-family: "Roboto", sans-serif;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+@mixin montserrat-family($font-weight:400, $font-style:normal) {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.75rem;
+$h5-font-size: 1.12rem;
+$base-font-size: 1rem;
